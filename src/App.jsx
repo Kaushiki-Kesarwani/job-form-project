@@ -1,0 +1,85 @@
+import { useState } from "react";
+import "./App.css";
+
+function App() {
+
+  const[gen,setGen] = useState('male');
+  const[city,setCity] = useState("Gurgaon");
+  const[course,setCourse] = useState("BCA");
+  const[experience,setExperience] = useState('5 yrs');
+  const[apply,setApply] = useState('Apply');
+  return (
+    <>
+      <h1>Software Engineer - Internship</h1>
+
+      <h3>Select Gender</h3>
+      <div className="gen">
+
+      <div>
+        <input type="radio" id="male" name="gender" onChange={(e)=>setGen(e.target.value)} checked={gen == 'male'} value="male"/>
+        <label htmlFor="male">male</label>
+      </div>
+
+      <div>
+        <input type="radio" id="female" name="gender" onChange={(e)=>setGen(e.target.value)} checked={gen =='female'} value="female"/>
+        <label htmlFor="female">female</label>
+      </div>
+
+      <div>
+        <input type="radio" name="gender" id="other" onChange={(e)=>setGen(e.target.value)} checked={gen == 'other'} value="other"/>
+        <label htmlFor="other">other</label>
+      </div>
+
+      <div>
+        <input type="radio" name="gender" id="notSpecified" onChange={(e)=>setGen(e.target.value)} checked={gen == 'notSpecified'} value="not specified"/>
+        <label htmlFor="notSpecified">not specified</label>
+      </div>
+      </div>
+
+      <h2 id="h2">Selected Gender : {gen}</h2>
+
+       <h3>Select city</h3>
+       <select id="city" defaultValue="Gurgaon" onChange={(e)=>setCity(e.target.value)} className="select">
+        <option value="Delhi">Delhi</option>
+         <option value="Kolkata">Kolkata</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Chandigardh">Chandigardh</option>
+           <option value="Goa">Goa</option>
+            <option value="Gurgaon">Gurgaon</option>
+             <option value="Noida">Noida</option>
+       </select>
+
+        <h2 id="h2">Selected City : {city}</h2> 
+
+          <h3>Select Specialization</h3>
+          <select id="Specialization" defaultValue="BCA" onChange={(e)=>setCourse(e.target.value)} className="select">
+            <option value="BCA">BCA</option>
+            <option value="B.tech">B.tech</option>
+            <option value="MCA">MCA</option>
+            <option value="PGDCA">PGDCA</option>
+            <option value="DCA">DCA</option>
+            <option value="CA">CA</option>
+          </select>
+
+     <h2 id="h2">Selected Specialization : {course}</h2> 
+
+      <h3>Select Experience</h3>
+      <select id="Experience" className="select" onChange={(e)=>setExperience(e.target.value)} defaultValue="5 yrs">
+        <option value="Fresher">Fresher</option>
+        <option value="0 yrs">0 yrs</option>
+        <option value="1 yrs">1 yrs</option>
+        <option value="2 yrs">2 yrs</option>
+        <option value="3 yrs">3 yrs</option>
+        <option value="4 yrs">4 yrs</option>
+        <option value="5 yrs">5 yrs</option>
+      </select>
+
+
+     <h2 id="h2">Selected Experience : {experience}</h2> 
+
+     <button className="btn" onClick={()=>setApply("Applied")}>{apply}</button>
+    </>
+  );
+}
+
+export default App;
