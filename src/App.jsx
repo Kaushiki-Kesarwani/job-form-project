@@ -78,6 +78,13 @@ function App() {
      <h2 id="h2">Selected Experience : {experience}</h2> 
 
      <button className="btn" onClick={()=>setApply("Applied")}>{apply}</button>
+
+     <div className="newbtn">
+      <p>Confirm if your application is submitted : </p>
+<button onClick={()=>alert("Application Submitted Succesfully!")}>Yes</button>
+<button onClick={()=>alert("Application not Submitted !")}>No</button>
+     </div>
+  
     </>
   );
 }
