@@ -29,6 +29,6 @@ background-color: rgb(9, 163, 9);
 
 .newbtn{
   display: flex;
-  gap: 3em;
+  gap: 10px;
   margin-top: 2em;
 }
