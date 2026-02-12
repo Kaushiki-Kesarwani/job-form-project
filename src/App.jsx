@@ -47,6 +47,7 @@ function App() {
            <option value="Goa">Goa</option>
             <option value="Gurgaon">Gurgaon</option>
              <option value="Noida">Noida</option>
+             <option value="Gujrat">Gujrat</option>
        </select>
 
         <h2 id="h2">Selected City : {city}</h2> 
