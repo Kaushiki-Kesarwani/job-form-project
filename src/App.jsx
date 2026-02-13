@@ -73,6 +73,7 @@ function App() {
         <option value="3 yrs">3 yrs</option>
         <option value="4 yrs">4 yrs</option>
         <option value="5 yrs">5 yrs</option>
+        <option value="6 yrs">6 yrs</option>
       </select>
 
 
