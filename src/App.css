@@ -5,30 +5,49 @@
   text-align: center;
 }
 
-.gen{
- display: flex;
- gap: 4em;
- justify-content: center
+.gen {
+  display: flex;
+  gap: 4em;
+  justify-content: center;
 }
 
-#h2{
+.h2 {
   margin-bottom: 5rem;
 }
 
-.select{
+.select {
   width: 15vw;
   height: 5vh;
   font-size: large;
   margin-left: auto;
-  
 }
 
-.btn:focus{
-background-color: rgb(9, 163, 9);
+.btn {
+  background-color: royalblue;
 }
 
-.newbtn{
+.btn:focus {
+  background-color: rgb(9, 163, 9);
+}
+
+.newbtn {
   display: flex;
   gap: 10px;
   margin-top: 2em;
+}
+
+.info {
+  margin-bottom: 1em;
+}
+
+.detail {
+  width: 20vw;
+  height: 5vh;
+  font-size: large;
+  margin-left: auto;
+}
+
+.bg {
+  background-color: rgb(252, 252, 252);
+  color: #000;
 }
