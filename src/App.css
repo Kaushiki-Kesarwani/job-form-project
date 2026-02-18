@@ -38,16 +38,61 @@
 
 .info {
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .detail {
-  width: 20vw;
-  height: 5vh;
+  width: 25vw;
+  height: 4vh;
   font-size: large;
   margin-left: auto;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 
 .bg {
   background-color: rgb(252, 252, 252);
   color: #000;
+}
+
+.container{
+  width: 100%;
+  height: 200vh;
+ background-color:white ;
+ border-radius: 1.5rem;
+ padding: 2rem;
+}
+
+h1,h4{
+  color: white;
+}
+
+#heading{
+  text-align: start;
+
+}
+
+.user-details{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.name{
+  text-align: start;
+}
+
+.num{
+  
+margin: auto;
+  width: 90%;
+}
+
+
+
+.label{
+  text-align: start;
+  margin-left: 2rem;
 }

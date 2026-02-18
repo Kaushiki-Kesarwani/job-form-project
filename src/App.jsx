@@ -9,10 +9,15 @@ function App() {
   const [apply, setApply] = useState("Apply");
   return (
     <>
-      <h1>Software Engineer - Internship</h1>
+    <h1>Software Engineer - Internship</h1>
+    <h4>Join our team and shape your future</h4>
+    <div className="container">
 
+<h2 id="heading">Personal Information</h2>
+<hr />
+<div className="user-details">
       <div className="info">
-        <label htmlFor="name">Name : </label>
+        <label className="name" htmlFor="name">fullName * </label>
         <input
           type="text"
           placeholder="Enter name"
@@ -22,7 +27,7 @@ function App() {
       </div>
 
       <div className="info">
-        <label htmlFor="email">E-mail : </label>
+        <label className="name" htmlFor="email">E-mail * </label>
         <input
           type="text"
           placeholder="E-mail"
@@ -30,18 +35,19 @@ function App() {
           className="detail bg"
         />
       </div>
+      </div>
 
-      <div className="info">
-        <label htmlFor="contact">Contact no : </label>
+      <div className="info ">
+        <label className="label" htmlFor="contact">Contact number </label>
         <input
           type="text"
           placeholder="Phone number "
           id="contact"
-          className="detail h2 bg"
+          className="detail h2 bg num"
         />
       </div>
 
-      <h3>Select Gender</h3>
+      <h3 >Select Gender</h3>
       <div className="gen">
         <div>
           <input
@@ -159,6 +165,7 @@ function App() {
           Yes
         </button>
         <button onClick={() => alert("Application not Submitted !")}>No</button>
+      </div>
       </div>
     </>
   );
