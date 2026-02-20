@@ -110,7 +110,7 @@ function App() {
         <option value="Delhi">Delhi</option>
         <option value="Kolkata">Kolkata</option>
         <option value="Mumbai">Mumbai</option>
-        <option value="Chandigardh">Chandigardh</option>
+        <option value="Chandigarh">Chandigarh</option>
         <option value="Goa">Goa</option>
         <option value="Gurgaon">Gurgaon</option>
         <option value="Noida">Noida</option>
