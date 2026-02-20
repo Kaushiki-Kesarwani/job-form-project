@@ -1,61 +1,62 @@
-:root {
+:root{
+  /* design tokens (global) */
+  --page-bg: #ffffff;
+  --card-bg: #ffffff;
+  --muted: #5b6470;
+  --accent: #163b8b;
+  --accent-2: #0b6b3a;
+  --input-bg: #ffffff;
+  --text: #0b2436;
+  --border: #d7dce6;
+  --radius: 6px;
+  --container-width: 760px;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(7, 7, 7, 0.87);
-  background-color: #4C5F6B;
-
+  color-scheme: light;
+  color: var(--text);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+/* Global page layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 180vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--page-bg);
+  color: var(--text);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+/* Global headings (light) */
+h1 { font-size: 2rem; line-height: 1.15; margin: 0; }
 
+/* Global button reset (component buttons are in App.css) */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.18s ease, background 0.12s ease;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+button:hover { border-color: rgba(0,0,0,0.06); }
+button:focus, button:focus-visible { outline: 4px auto -webkit-focus-ring-color; }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  :root { color: var(--text); background-color: #ffffff; }
 }
